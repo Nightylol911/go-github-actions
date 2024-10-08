@@ -8,7 +8,10 @@ on:
 jobs:
   go-pull-request:
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - run: go build -o app-name .
+
+
+    - run: docker compose run go ./app-name
