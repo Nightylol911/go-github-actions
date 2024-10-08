@@ -1,4 +1,4 @@
 services:
-  test:
+  go:
     build: .
-    command: go build -o go-github-actions .
+    command: go build -o app-name .
