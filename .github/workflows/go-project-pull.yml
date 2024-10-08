@@ -14,4 +14,4 @@ jobs:
       uses: actions/checkout@v4
 
 
-    - run: docker compose run go build -o app-name .
+    - run: docker compose run go ./app-name
